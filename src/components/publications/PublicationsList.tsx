@@ -18,6 +18,7 @@ const authorUrls: Record<string, string> = {
     'Mayur Naik': 'https://www.cis.upenn.edu/~mhnaik/',
     'Zhiqiu Xu': 'https://oscarxzq.github.io/',
     'Zhiwei Zheng': 'https://zhiwei-zzz.github.io/',
+    'Lingjie Liu': 'https://lingjie0206.github.io/',
     'Mingmin Zhao': 'https://www.cis.upenn.edu/~mingminz/',
     'Shangyu Gong': 'https://www.linkedin.com/in/shangyu-ricky-gong/',
 };
