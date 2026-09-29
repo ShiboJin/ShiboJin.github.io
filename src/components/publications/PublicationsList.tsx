@@ -14,6 +14,14 @@ interface PublicationsListProps {
     embedded?: boolean;
 }
 
+const authorUrls: Record<string, string> = {
+    'Mayur Naik': 'https://www.cis.upenn.edu/~mhnaik/',
+    'Zhiqiu Xu': 'https://oscarxzq.github.io/',
+    'Zhiwei Zheng': 'https://zhiwei-zzz.github.io/',
+    'Mingmin Zhao': 'https://www.cis.upenn.edu/~mingminz/',
+    'Shangyu Gong': 'https://www.linkedin.com/in/shangyu-ricky-gong/',
+};
+
 export default function PublicationsList({ config, publications, embedded = false }: PublicationsListProps) {
     const messages = useMessages();
 
@@ -74,9 +82,20 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     <p className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-400 mb-1`}>
                                         {pub.authors.map((author, idx) => (
                                             <span key={idx}>
-                                                <span className={`${author.isHighlighted ? 'font-semibold text-accent' : ''} ${author.isCoAuthor ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}` : ''}`}>
-                                                    {author.name}
-                                                </span>
+                                                {authorUrls[author.name] ? (
+                                                    <a
+                                                        href={authorUrls[author.name]}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="hover:text-accent hover:underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
+                                                    >
+                                                        {author.name}
+                                                    </a>
+                                                ) : (
+                                                    <span className={`${author.isHighlighted ? 'font-semibold text-accent' : ''} ${author.isCoAuthor ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}` : ''}`}>
+                                                        {author.name}
+                                                    </span>
+                                                )}
                                                 {author.isEqualContribution && (
                                                     <sup className={`ml-0 ${author.isHighlighted ? 'text-accent' : 'text-neutral-600 dark:text-neutral-400'}`}>*</sup>
                                                 )}
