@@ -1,0 +1,48 @@
+[site]
+title = "Shibo Jin"
+description = "Shibo Jin is a PhD student at the University of Pennsylvania researching LLM agents, self-play, and multi-agent systems."
+favicon = "/favicon.svg"
+
+[author]
+name = "Shibo Jin"
+title = "PhD Student · Computer & Information Science"
+institution = "University of Pennsylvania"
+avatar = "/shibo-jin-portrait.png"
+
+[social]
+email = "shibo517@engineering.upenn.edu"
+google_scholar = "https://scholar.google.com/citations?user=wUZj5QEAAAAJ"
+linkedin = "https://www.linkedin.com/in/jin-shibo"
+
+[features]
+enable_likes = false
+enable_one_page_mode = true
+
+[i18n]
+enabled = false
+locales = ["en"]
+default_locale = "en"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "News"
+type = "section"
+target = "news"
+href = "/#news"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/#publications"
+
+[[navigation]]
+title = "CV"
+type = "link"
+target = "cv"
+href = "/shibo-jin-cv.pdf"

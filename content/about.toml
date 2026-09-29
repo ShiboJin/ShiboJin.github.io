@@ -1,0 +1,21 @@
+type = "about"
+title = "About"
+
+[profile]
+research_interests = [
+  "LLM agents",
+  "Multi-agent systems",
+  "Agent Self improving & co-evolution"
+]
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "About"
+
+[[sections]]
+id = "news"
+type = "list"
+title = "News"
+source = "news.toml"

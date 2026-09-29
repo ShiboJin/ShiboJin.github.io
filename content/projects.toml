@@ -1,0 +1,31 @@
+type = "card"
+title = "Research Projects"
+description = "My work asks how models can create useful challenges, learn from each other, and preserve structure when generating complex outputs."
+
+[[items]]
+title = "Environment Duels"
+subtitle = "Interactive environments · LLM co-evolution"
+date = "2026"
+content = "Models author interactive environments with privileged hints, then solve one another's tasks. The resulting duels separate authoring ability from solving ability and offer a small, controlled view of how models shape each other's learning. Manuscript under review."
+tags = ["LLM agents", "Multi-agent evaluation", "Interactive environments"]
+image = "/papers/environment-duels-teaser.png"
+
+[[items]]
+title = "MathDuels"
+subtitle = "A self-play benchmark that grows"
+date = "CoLM 2026"
+content = "Models both write and solve math problems. The benchmark estimates each model's strength in both roles and evolves as new models produce harder challenges."
+tags = ["Self-play", "Math reasoning", "Benchmarking"]
+image = "/papers/mathduels-leaderboard.png"
+link = "https://arxiv.org/abs/2604.21916"
+link_label = "Read paper"
+
+[[items]]
+title = "MoScale"
+subtitle = "Next-scale text-to-motion generation"
+date = "CVPR 2026"
+content = "A coarse-to-fine autoregressive framework that sets the global semantic structure of a motion sequence before refining details at finer scales."
+tags = ["Generative modeling", "Human motion", "Autoregression"]
+image = "/papers/moscale-teaser.png"
+link = "https://arxiv.org/abs/2604.03799"
+link_label = "Read paper"
