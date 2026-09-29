@@ -1,7 +1,6 @@
 [site]
 title = "Shibo Jin"
 description = "Shibo Jin is a PhD student at the University of Pennsylvania researching LLM agents, self-play, and multi-agent systems."
-favicon = "/favicon.svg"
 
 [author]
 name = "Shibo Jin"
