@@ -13,7 +13,7 @@ image = "/papers/environment-duels-teaser.png"
 [[items]]
 title = "MathDuels"
 subtitle = "A self-play benchmark that grows"
-date = "CoLM 2026"
+date = "COLM 2026"
 content = "Models both write and solve math problems. The benchmark estimates each model's strength in both roles and evolves as new models produce harder challenges."
 tags = ["Self-play", "Math reasoning", "Benchmarking"]
 image = "/papers/mathduels-leaderboard.png"
