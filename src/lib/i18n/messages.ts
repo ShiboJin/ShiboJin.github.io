@@ -24,10 +24,6 @@ export interface LocaleMessages {
   publications: {
     noResults: string;
   };
-  footer: {
-    lastUpdated: string;
-    builtWithPrism: string;
-  };
 }
 
 const en: LocaleMessages = {
@@ -55,10 +51,6 @@ const en: LocaleMessages = {
   },
   publications: {
     noResults: 'No publications available yet.',
-  },
-  footer: {
-    lastUpdated: 'Last updated',
-    builtWithPrism: 'Built with PRISM',
   },
 };
 
