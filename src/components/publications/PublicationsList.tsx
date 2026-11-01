@@ -115,6 +115,11 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                     [paper]
                                                 </a>
                                             )}
+                                            {pub.code && (
+                                                <a href={pub.code} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-4">
+                                                    [code]
+                                                </a>
+                                            )}
                                             {pub.webpageUrl && (
                                                 <a href={pub.webpageUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-4">
                                                     [webpage]
@@ -128,11 +133,6 @@ export default function PublicationsList({ config, publications, embedded = fals
                                             {pub.blogUrl && (
                                                 <a href={pub.blogUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-4">
                                                     [blog]
-                                                </a>
-                                            )}
-                                            {pub.code && (
-                                                <a href={pub.code} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-4">
-                                                    [code]
                                                 </a>
                                             )}
                                         </div>
